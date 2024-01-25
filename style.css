@@ -1,0 +1,314 @@
+.header{
+    background: #E7E6E6;
+}
+
+.main-menu li a{
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.main-menu li:hover > a{
+    color: #2624C8;;
+    transition: .4s;
+
+}
+
+ .main-menu li a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 0;
+    bottom: -17px;
+    background: #9D8FEC;
+    transition: .4s;
+}
+
+.main-menu li a:hover::after{
+    width: 100%;
+}
+
+.main-menu li .active{
+    color: #2624C8;
+    position: relative;
+}
+
+.main-menu li .active::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    bottom: -17px;
+    background: #9D8FEC;
+
+}
+
+
+
+.m-bt .btn{
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #2624C8;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.m-bt .btn:hover{
+    color: white;
+}
+
+.m-bt .btn::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #7773FF;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s;
+    z-index: -1;
+    border-radius: 20px;
+
+}
+
+.m-bt .btn:hover::after{
+    width: 100%;
+}
+
+
+
+
+.menu-img img{
+
+    width: 100px;
+}
+
+
+/* dropdown */
+
+.main-menu li{
+    position: relative;
+
+}
+
+.main-menu  li .ex-page{
+    background: white;
+    width: 184px;
+    padding: 20px;
+    position: absolute;
+    bottom: -122px;
+    left: -19px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 50;
+
+}
+
+.main-menu li:hover .ex-page{
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu li .ex-page p{
+    background: blue;
+    padding: 20px;
+    color: white;
+    margin-bottom: 0;
+      
+}
+
+/* banner */
+
+.banner{
+    background: #EDF6FF;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+.banner-text{
+    width: 612px;
+    display: inline-block;
+    margin-top:180px;
+    
+}
+.banner-text .btn{
+    border-radius: 20px;
+}
+
+.banner-text .btn:hover{
+    background: white;
+    color: #2624C8;
+    border: 1px solid blue;
+
+}
+
+
+.banner::before{
+    content: "";
+    position: absolute;
+    background: url("https://i.postimg.cc/PNnNQscg/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 627px;
+    width: 700px;
+    right: -10%;
+    top: -100px;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+/* card-section */
+
+.card-text{
+    width: 635px;
+    position: relative;
+}
+.card-text .p{
+    color: #2624C8;
+}
+
+
+.card-text h1::after{
+    content: "";
+    position: absolute;
+    bottom: 75px;
+    left: 7px;
+    width: 7%;
+    height: 2px;
+    background: #2624C8;
+}
+
+.card{
+    background: #F9FCFF;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+    transition: .4s;
+}
+
+.card h4{
+    font-size: 20px;
+}
+
+.card-body .icon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    border-radius: 50px 50px 50px 0;
+    background: blue;
+    position: relative;
+    transition: .4s;
+}
+
+
+.card-body .icon::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #2624C8;
+    top: 54px;
+    left: 0;
+}
+
+/* hover part */
+
+.card-sec{
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+}
+
+.card-sec::after{
+    content: "";
+    position: absolute;
+    background: url("https://demo.graygrids.com/themes/massive/assets/images/service/service-patern.png");
+    background-repeat: repeat;
+    background-size: cover;
+    top: 375px;
+    left: 39px;
+    height: 200px;
+    width: 300px;
+    z-index: -1;
+
+}
+
+
+.card-sec .card:hover{
+    background: #2624C8;
+    color: white;
+    transform: scale(1.03);
+}
+
+.card-sec .card:hover .icon{
+    background: #fff;
+    color: #2624C8;
+}
+
+.card-sec .card:hover .icon::after{
+    background:white;
+    width: 50px;
+    overflow: hidden;
+}
+
+/* footer */
+.ft-text{
+    color: #fff;
+    width: 400px;
+    margin: auto;
+}
+
+.ft-text h3{
+    font-size: 30px;
+    position: relative;
+}
+
+.ft-text h3::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    background: #9D8FEC;
+    left: 144px;
+    top: 44px;
+}
+.ft-text h5{
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
